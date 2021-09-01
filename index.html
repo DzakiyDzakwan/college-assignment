@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tugas 2</title>
+</head>
+<body>
+    
+    <table  border="0" align="center" width="1000px" cellspacing="0" cellpadding="0">
+        <thead height="100px">
+            <td class="border" colspan="2" id="header" align="center" >
+                <h1>Tugas 2</h1>
+            </td>
+        </thead>
+        <tr height="80px">
+
+            <!--Navbar-->
+            <td class="border"  id="navbar" colspan="2" align="center">
+                <ul>
+                    <a href="#home"><li>Home</li></a>
+                    <a href="#about"><li>About</li></a>
+                    <a href="#form"><li>Form</li></a>
+                </ul>
+            </td>
+
+        </tr>
+        <tr height = "500px">
+
+            <!--Sidebar-->
+            <td width="5%" class="border" id="sidebar" align="center">
+                <ul>
+                    <li><a href="https://github.com/DzakiyDzakwan" target="blank"><img src="https://image.flaticon.com/icons/png/512/25/25231.png" width=50px" alt="Github"></a></li>
+                    <li><a href="https://gitlab.com/DzakiyDzakwan" target="blank"><img src="gitlab.png" width="50px" alt="Gitlab"></a></li>
+                    <li><a href="https://www.instagram.com/nekomamushi_s/" target="blank"><img src="https://image.flaticon.com/icons/png/512/733/733558.png" width="50px" alt="Instagram"></a></li>
+                    <li><a href="https://steamcommunity.com/id/Chizuru_s/" target="blank"><img src="steam.png" width="50px" alt="steam"></a></li>
+                </ul>
+            </td>
+
+            <!--Main Content-->
+            <td width="95%" class="border" id="content">
+                <h2 id="judul2">Article</h2>
+                <div id="isi-article" align="center">
+                    <h3 id="home">Komi Can't Communicate</h3>
+                    <div class="trailer">
+                        <iframe width="350" height="200" src="https://www.youtube.com/embed/3snByVaQUF0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="character">
+                            <h4> Main Character</h4>
+                            <ul width=100px>
+                                <li>
+                                    <img src="komi.png" width="70" alt="Komi">
+                                    <p>Komi Shoko</p>
+                                </li>
+                                <li>
+                                    <img src="tadano.png" width="70px" alt="tadano">
+                                    <p>Tadano Hito</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="isi">Kabar Gembira bagi kita semua. <strong>Komi Can't Communicate</strong> (Japanese: 古見さんは、コミュ症です。, Hepburn: Komi-san wa, Komyushō desu.) bakal tayang tahun ini menemani musim semi kita. Anime ini direncanakan bakal tayang pada tanggal <strong>7 Oktober 2021</strong>. Anime diadaptasi dari Manga nya yang berjudul sama.</p>
+                    <h3>Sword Art Online Movie Progressive</h3>
+                    <div class="trailer">
+                        <iframe width="350" height="200" src="https://www.youtube.com/embed/VmOLSoEzLoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="character">
+                            <h4> Main Character</h4>
+                            <ul width=100px>
+                                <li>
+                                    <img src="Kirito.png" width="70" alt="Kirito">
+                                    <p>Kirigaya Kazuto</p>
+                                </li>
+                                <li>
+                                    <img src="Asuna.png" width="70px" alt="Asuna">
+                                    <p>Yuki Asuna</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="isi">Movie terbaru dari <strong><abbr title="Sword Art Online">SAO</abbr></strong> akan segera tayang. Film ini bakal menceritakan sudut Pandang Asuna saat terjebak di Aincrad. Film ini direncanakan akan tayang pada tanggal <strong>30 Oktober 2021</strong> waktu Jepang. Wawktu penanyangan nya diperkirakan mencapai 1 jam 30 menit </p>
+                    <br>
+
+                    <fieldset style="border: 0px;" id="about">
+                        <legend style="text-align: center;">
+                            <h2 style="font-size:30px; font-weight: bold;">About</h2>
+                        </legend>
+                        <h3>Azaelf Studio</h3>
+                        <p>Bagi anda mahasiswa yang berminat dalam dunia arsitektur dan design. Azaelf Studio membuka pendaftaran untuk pelatihan khusus penggunaan Auto CAD bagi mahasiswa Jurusan Teknologi Informasi . Syarat dan Ketentuan untuk mengikuti pelatihan khusus ini adalah :</p>
+                        <ul>
+                            <li>Mahasiswa Semester 1 Jurusan Teknologi Informasi</li>
+                            <li>Alumni SMA(IPA)/SMK</li>
+                            <li>Memiliki niat yang kuat</li>
+                            <li>
+                                Memiliki hal-hal berikut :
+                                <ol>
+                                    <li>KTP</li>
+                                    <li>KTM</li>
+                                    <li>Laptop</li>
+                                </ol>
+                            </li>
+                        </ul> 
+    
+                        <p>Jika berminat silahkan isi formulir pendaftaran dibawah ini. Kami akan memulai pelatihan pada jadwal yang akan diberikan ke alamat email para peserta</p>
+                        <P><strong>Ingat</strong> Jumlah perserta terbatas. Terimakasih</P>
+                    </fieldset>
+                    <br>
+    
+                    <form action="https://dzakiydzakwan.github.io/project1/" target="blank">
+                        <!--@csrf-->
+                        <fieldset id="form">
+                            <legend><h3>Formulir Pendaftaran</h3></legend>
+                            <table class="form" border="0">
+                            <tr>
+                                <td><label for="user">Username</label> </td>
+                                <td ><input type="text" name="user"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="password">Password</label></td>
+                                <td>
+                                    <input type="password" name="password">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="Email">Email</label></td>
+                                <td>
+                                    <input type="Email" name="Email">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Jenis kelamin</td>
+                                <td >
+                                    <input type="radio" name="Laki-Laki" id="">
+                                    <label for="gender" name="Laki-Laki">Laki-Laki</label>
+                                    <input type="radio" name="perempuan" id="">
+                                    <label for="gender" name="perempuan">Perempuan</label>
+                                </td>
+                                <tr>
+                                    <td>Bahasa Pemrograman anda</td>
+                                    <td>
+                                        <input type="checkbox" name="PHP" id="">
+                                        <label for="HTML">PHP</label>
+                                        <input type="checkbox" name="CPP" id="">
+                                        <label for="CPP">C++</label>
+                                        <input type="checkbox" name="Pyhton" id="">
+                                        <label for="Pyhton">Pyhton</label>
+                                        <input type="checkbox" name="Javascript" id="">
+                                        <label for="Javascript">Javascript</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="choose-class">Pilih kelas anda</label>
+                                    </td>
+                                    <td>
+                                        <select name="" id="">
+                                            <option value="KomA">Kom A</option>
+                                            <option value="KomB">Kom B</option>
+                                            <option value="KomC">Kom C</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Berikan Komentar anda</td>
+                                    <td>
+                                        <textarea name="review" id="" cols="30" rows="4"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input type="submit" value="submit">
+                                    </td>
+                                </tr>
+                                
+                                    
+                            </tr>
+                        </table>
+                        </fieldset>
+                        
+                    </form>
+                    <a href="#home"><button style="padding: 10px; margin: 10px; border-radius: 10px; color: #FFFF; background-color: #914F3B;">Back to Home</button></a>
+                </div>
+               
+            </td>
+
+        </tr>
+        <tr height="125px">
+
+            <!--Footer-->
+            <td class="border" id="footer" colspan="2" align="center">
+                <div class="footer">
+                    <h3>&copy;Dzakiy Dzakwan</h3>
+                    <a href="https://dzakiydzakwan.github.io/Tugas/"><button>Back</button></a>
+                    <a href=""><button>Next</button></a>
+                </div>
+            </td>
+
+        </tr>
+    </table>
+
+</body>
+</html>
