@@ -60,7 +60,10 @@ td h1:hover {
     background-color: #914F3B;
     border-radius: 25px;
     color: #FFFF;
-    transition: 0.8s;
+    transition: 0.5s;
+    box-shadow: 4px 4px 16px 1px rgba(0,0,0,0.51);
+    -webkit-box-shadow: 4px 4px 16px 1px rgba(0,0,0,0.51);
+    -moz-box-shadow: 4px 4px 16px 1px rgba(0,0,0,0.51);
 }
 
 #sidebar ul li {
@@ -71,7 +74,29 @@ td h1:hover {
     align-content: center;
     padding: 20px;
     margin-right: 25px;
+    animation: imgmove 1s;
 }
+
+#sidebar ul li img:hover {
+    animation: imgmove2 2s;
+}
+
+@keyframes imgmove {
+   from {
+       transform: rotate(360deg);
+   } to {
+       transform: rotate(0deg);
+   }
+}
+
+
+@keyframes imgmove2 {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+ }
 
 #content {
     vertical-align: text-top;
@@ -126,6 +151,8 @@ td h1:hover {
 
 .trailer {
     display: flex;
+    width: 100%;
+    height: 210px;
 }
 
 .character {
@@ -134,22 +161,44 @@ td h1:hover {
 
 .character h4 {
     margin-left: 10px;
+    margin-top: 0px;
 }
 
 .character ul {
-    display: grid;
-    grid-template-columns: 6em 6em;
+    display: flex;
 }
 
 .character ul li {
     list-style: none;
-    margin: 5px;
+    margin: 20px;
+    text-align: center;
 
 }
 
 .character ul li p {
     font-size: 14px;
     text-align: center;
+    border-radius: 5px;
+    background-color: #914F3B;
+    color: #FFFF;
+    height: auto;
+    width: 80px;
+    display: block;
+}
+
+.mc:hover {
+    animation: mcmove 2s ;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes mcmove {
+    from {
+        transform: scale(1);
+    } to {
+        transform: scale(1.5);
+        color: #FFFF;
+    }
 }
 
 fieldset {
