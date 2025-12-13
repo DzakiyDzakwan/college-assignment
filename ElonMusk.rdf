@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Elon Musk -->
+
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:dbo="http://dbpedia.org/ontology/"
+    xmlns:dbp="http://dbpedia.org/property/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+    xmlns:wealth="http://example.org/schema/wealth/"
+    xmlns:elon="http://example.org/schema/elon/"
+    xmlns:person="http://example.org/schema/person/">
+
+    <foaf:PersonalProfileDocument
+        rdf:about="http://localhost/tubesWS/ElonMusk.rdf">
+        <rdfs:label>Elon Musk</rdfs:label>
+        <foaf:maker rdf:resource="http://localhost/tubesWS/" />
+        <foaf:primaryTopic rdf:resource="http://localhost/tubesWS/" />
+    </foaf:PersonalProfileDocument>
+
+    <rdf:Description
+        rdf:about="http://localhost/tubesWS/">
+        <wealth:year18 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19.9</wealth:year18>
+        <wealth:year19 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22.3</wealth:year19>
+        <wealth:year20 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24.6</wealth:year20>
+        <wealth:year21 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">151</wealth:year21>
+        <wealth:year22 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">219</wealth:year22>
+
+        <owl:sameAs>
+            <elon:about rdf:about="https://www.imdb.com/">
+                <foaf:homepage rdf:resource="https://www.imdb.com/name/nm1907769/" />
+                <elon:title>Video</elon:title>
+            </elon:about>
+        </owl:sameAs>
+    </rdf:Description>
+
+</rdf:RDF>
