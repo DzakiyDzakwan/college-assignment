@@ -1,0 +1,119 @@
+/* NAV CONTAINER */
+
+.nav-container {
+  justify-content: center;
+  width: 10%;
+  min-height: 100vh;
+  background-color: var(--background);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.nav-container .navigation-float {
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+/* LOGO CONTAINER */
+.nav-container .navigation-float .logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font2);
+  color: var(--main);
+}
+
+.nav-container .navigation-float .logo-container img {
+  width: 80px;
+}
+/* LOGO CONTAINER END */
+
+/*  MENU CONTAINER */
+.nav-container .navigation-float .menu-container {
+  background-color: var(--main);
+  border-radius: 20px;
+}
+
+.nav-container .navigation-float .menu-container ul {
+  padding: 0;
+  font-family: var(--font2);
+}
+
+.nav-container .navigation-float .menu-container ul .active {
+  color: var(--second);
+}
+
+.nav-container .navigation-float .menu-container ul a:hover {
+  color: var(--second);
+}
+
+.nav-container .navigation-float .menu-container ul a {
+  text-decoration: none;
+  color: var(--body);
+  font-size: 18px;
+}
+
+.nav-container .navigation-float .menu-container ul a li {
+  list-style: none;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-container .navigation-float .menu-container ul a li i {
+  font-size: 30px;
+}
+/* MENU CONTAINER END */
+
+/* PROFILE CONTAINER */
+.nav-container .navigation-float .profile-container {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-family: var(--font2);
+}
+
+.nav-container .navigation-float .profile-container img {
+  width: 70% !important;
+  border-radius: 50%;
+}
+
+.nav-container .navigation-float .profile-container .popover {
+  width: 150px;
+  border-radius: 10px;
+  top: 650px;
+  left: 80px;
+  display: none;
+  font-family: var(--font2);
+  size: 18px;
+}
+
+.nav-container .navigation-float .profile-container .popover ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-container .navigation-float .profile-container .popover ul a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-container .navigation-float .profile-container .popover ul li {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.nav-container .navigation-float .profile-container .popover ul li:hover {
+  background-color: var(--body);
+}
+/* PROFILE-CONTAINER END */
+
+/* NAV CONTAINER END */

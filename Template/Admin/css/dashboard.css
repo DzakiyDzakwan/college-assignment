@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main : #347F3C;
+    --second : #E8C21E;
+    --body : #F9F6F6;
+    --background : #FFFF;
+    --font1 : "Poppins";
+    --font2 : "Oswald"
+}
+
+ body {
+    background-color: var(--body); 
+    display: flex;
+ }
+
+ /* MAIN-BAR */
+ .section-container {
+     width: 100%;
+ }
+
+ /* DATA USER */
+.data-user, .data-container, .detail-container {
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: var(--body);
+    font-family: var(--font1);
+ }
+
+ .section-container .data-user h3 {
+     font-family: var(--font1);
+     color: var(--main);
+     font-weight: 600;
+ }
+
+.chart{
+    width: 70%;
+    margin: auto;
+ }
+
+ .section-container .data-user a {
+     text-decoration: none;
+ }
+
+ .section-container .data-user a .detail-btn{
+    display: block;
+    width: 150px;
+    border-radius: 20px;
+    font-weight: 700;
+ }
+ /* DATA USER END*/
+
+ /* CARD SECTION */
+ .section-container .card-section .row .data-container h3 {
+    font-family: var(--font1);
+    color: var(--main);
+    font-weight: 600;
+ }
+
+ .section-container .card-section .row {
+     justify-content: space-between;
+ }
+
+ .section-container .card-section .row .data-container {
+     width: 49%;
+ }
+
+ .section-container .card-section .row .data-container a {
+     text-decoration: none;
+ }
+
+ .section-container .card-section .row .data-container .detail-btn {
+    display: block;
+    width: 150px;
+    border-radius: 20px;
+    font-weight: 700;
+ }
+ /* CARD SECTION END */
+
+ /* DETAIL CONTAINER */
+
+ .detail-container h3 {
+    font-family: var(--font1);
+    color: var(--main);
+    font-weight: 600;
+ }
+ /* DETAIL CONTAINER END */
+ 
+ /* MAIN BAR END */
+
+ 

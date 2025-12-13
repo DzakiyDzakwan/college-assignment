@@ -1,0 +1,176 @@
+-Login & Register
+1. Login - Sahat
+2. Register - Sahat
+
+-Admin
+1. Read User -Dzakiy ✅
+2. Delete User - Dzakiy ✅
+3. Read Mahasiswa - Dzakiy ✅
+4. Add Mahasiswa - Dzakiy✅
+5. Delete Mahasiswa - Dzakiy✅
+6. Read Dosen - Dzakiy ✅
+7. Add Dosen - Dzakiy✅
+8. Delete Dosen - Dzakiy✅
+9. Read Aslab - Dzakiy ✅
+10. Add Aslab  - Dzakiy ✅
+11. Enroll Aslab - 
+12. Delete Aslab - Dzakiy ✅
+13. Read Fakultas - Dzakiy ✅
+14. Add Fakultas - Dzakiy ✅
+15. Edit Fakultas - Sahat
+16. Delete Fakultas - Dzakiy ✅
+17. Read Jurusan - Dzakiy✅
+18. Add Jurusan - Dzakiy ✅
+19. Edit Jurusan - Sahat
+20. Delete Jurusan - Dzakiy ✅
+21. Read Mata Kuliah - Dzakiy✅
+22. Add Mata Kuliah - Dzakiy
+23. Edit Mata Kuliah - Sahat
+24. Delete Mata Kuliah - Dzakiy 
+25. Read Kelas - Dzakiy✅
+26. Add Kelas - Dzakiy
+27. Edit Kelas - Sahat
+28. Delete Kelas - Dzakiy
+
+-User
+--Enrollment
+1. Read Fakultas -Amel
+2. Read Jurusan -Amel
+3. Read Kelas -Amel
+4. Enroll Kelas -Amel
+
+--Dashboard
+1. Read Sidebar Kelas -Neha
+---Mahasiswa
+1. Read kelas yang sudah di enroll -Agnes
+2. Read Pertemuan di setiap kelas -Agnes
+3. Read Materi di setiap pertemuan -Agnes
+4. Read tugas di setiap pertemuan -Agnes
+5. Insert Jawaban -Agnes
+6. Edit Jawaban -Agnes
+7. Delete Jawaban -Agnes
+8. Absensi - 
+
+
+--Dosen
+1. Read kelas yang dimasuki
+2. Create Pertemuan
+3. Read Pertemuan
+4. Delete Pertemuan
+5. Create Materi
+6. Read Materi
+7. Edit Materi
+8. Delete Materi
+9. Create Tugas
+10. Read Tugas
+11. Edit Tugas
+12. Delete Tugas
+13. Lihat Jawaban
+14. Nilai Jawaban
+
+-PROFIL
+1. Read Profil User & Guru - Neha & Amel
+2. Edit Profil User & Guru - Neha & Amel
+
+Dzakiy List : 
+1. Read User -Dzakiy ✅
+2. Delete User - Dzakiy ✅
+3. Read Mahasiswa - Dzakiy ✅
+4. Add Mahasiswa - Dzakiy✅
+5. Delete Mahasiswa - Dzakiy✅
+6. Read Dosen - Dzakiy ✅
+7. Add Dosen - Dzakiy✅
+8. Delete Dosen - Dzakiy✅
+9. Read Aslab - Dzakiy ✅
+10. Add Aslab  - Dzakiy ✅
+11. Delete Aslab - Dzakiy ✅
+12. Read Fakultas - Dzakiy ✅
+13. Add Fakultas - Dzakiy ✅
+14. Delete Fakultas - Dzakiy ✅
+15. Read Jurusan - Dzakiy✅
+16. Add Jurusan - Dzakiy ✅
+17. Delete Jurusan - Dzakiy ✅
+18. Read Mata Kuliah - Dzakiy✅
+19. Add Mata Kuliah - Dzakiy ✅
+20. Delete Mata Kuliah - Dzakiy ✅
+21. Read Kelas - Dzakiy✅
+22. Add Kelas - Dzakiy
+23. Delete Kelas - Dzakiy
+
+Sahat List :
+1. Login - Sahat
+2. Register - Sahat
+3. Edit Fakultas - Sahat
+4. Edit Jurusan - Sahat
+5. Edit Mata Kuliah - Sahat
+6. Edit Kelas - Sahat
+
+Amel List :
+1. Read Fakultas -Amel
+2. Read Jurusan -Amel
+3. Read Kelas -Amel
+4. Read Profil User & Guru -amel&neha
+5. Edit Profil User & Guru -amel&neha
+
+Agnes List :
+1. Read kelas yang sudah di enroll -Agnes
+2. Read Pertemuan di setiap kelas -Agnes
+3. Read Materi di setiap pertemuan -Agnes
+4. Read tugas di setiap pertemuan -Agnes
+5. Insert Jawaban -Agnes
+6. Edit Jawaban -Agnes
+7. Delete Jawaban -Agnes
+
+Neha List :
+1. Enroll Kelas Mahasiswa -Neha 
+2. Read Sidebar Kelas Siswa&Dosen -Neha
+3. Read Dashboar Kelas Mahasiswa -Neha
+4. Read Profil User & Guru -amel&neha
+5. Edit Profil User & Guru -amel&neha
+
+
+Admin : 
+1. Dzakiy
+
+Register : 
+1. Sahat
+
+Login : 
+1. Dzakiy
+2. Sahat
+
+Dashboard
+
+Profil & Edit Profil :
+1. Neha
+2. Amel 
+
+Kelas :
+1. Sahat
+
+
+Absen : 
+1. Amel
+
+Tugas :
+1. Agnes
+
+Jawaban :
+1.
+
+Input Jawaban : Rizki Sahat
+Edit Jawaban : Rizki Sahat
+
+Delete Jawaban : 
+
+Read Absensi Mahasiswa ditempat dosen :
+
+Nilai : Dzakiy Dzakwan
+
+Laporan : Dzakiy, , Amel, Neha
+
+PPT : Sahat, Agnes
+
+
+
+

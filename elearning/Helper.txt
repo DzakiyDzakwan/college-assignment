@@ -1,0 +1,110 @@
+/*USER*/
+User::create([
+  'NIK'=>'127103112310001',
+  'email'=>'DzakiyDzakwan@gmail.com',
+  'nomor_hp'=> '082360360216',
+  'first_name'=> 'Dzakiy',
+  'last_name'=> 'Dzakwan',
+  'jenis_kelamin' => 'pria',
+  'agama'=> 'Islam',
+  'kewarganegaraan' => 'WNI',
+  'alamat' => "Jalan Kambing",
+  'tgl_lahir' => '2002-12-01',
+  'password' => bcrypt('sandi123'),
+  'status' => 'mahasiswa'
+])
+
+User::create([
+  'NIK'=>'127103112310002',
+  'email'=>'RizkiSahat@gmail.com',
+  'nomor_hp'=> '082360360001',
+  'first_name'=> 'Rizki',
+  'last_name'=> 'Sahat',
+  'jenis_kelamin' => 'pria',
+  'agama'=> 'Kristen',
+  'kewarganegaraan' => 'WNI',
+  'alamat' => "Jalan Banteng",
+  'tgl_lahir' => '2003-05-20',
+  'password' => bcrypt('sandi321'),
+  'status' => 'mahasiswa'
+])
+
+User::create([
+  'NIK'=>'127103112310003',
+  'email'=>'RizqiAmelia@gmail.com',
+  'nomor_hp'=> '082360360002',
+  'first_name'=> 'Rizqi',
+  'last_name'=> 'Amelia',
+  'jenis_kelamin' => 'wanita',
+  'agama'=> 'Islam',
+  'kewarganegaraan' => 'WNI',
+  'alamat' => "Jalan Burung",
+  'tgl_lahir' => '2004-05-30',
+  'password' => bcrypt('sandi213'),
+  'status' => 'mahasiswa'
+])
+
+User::create([
+  'NIK'=>'127103112320001',
+  'email'=>'JaneDoes@gmail.com',
+  'nomor_hp'=> '082300010216',
+  'first_name'=> 'Dzakiy',
+  'last_name'=> 'Dzakwan',
+  'jenis_kelamin' => 'wanita',
+  'agama'=> 'Kristen',
+  'kewarganegaraan' => 'WNA',
+  'alamat' => "Asrama Wanita",
+  'tgl_lahir' => '1995-12-05',
+  'password' => bcrypt('janedoes'),
+  'status' => 'dosen'
+])
+
+User::create([
+  'NIK'=>'127103112320003',
+  'email'=>'BudiSanjaya@gmail.com',
+  'nomor_hp'=> '0823000201234',
+  'first_name'=> 'Budi',
+  'last_name'=> 'Sanjaya',
+  'jenis_kelamin' => 'pria',
+  'agama'=> 'Islam',
+  'kewarganegaraan' => 'WNI',
+  'alamat' => "Jalan Buku",
+  'tgl_lahir' => '1985-03-20',
+  'password' => bcrypt('321'),
+  'status' => 'dosen'
+])
+
+
+/*Dosen*/
+
+Dosen::create([
+  
+  'NIP'=> '199210002',
+  'NIDN'=> '13204006',
+  'status'=> 'aktif',
+  'user'=> '127103112320002'
+
+  ])
+
+/*Fakultas*/
+
+Fakultas::create([
+  'kode_fakultas'=>"F0003",
+  'nama_fakultas' => "Teknologi Informasi",
+  'dekan'=> '199210002'
+])
+
+/*Jurusan*/
+
+Jurusan::create([
+  'kode_jurusan'=>'TK002',
+  'nama_jurusan'=> 'Tehnik Lingkungan',
+  'degree'=> 'S1',
+  'fakultas_id'=>'F0002'
+])
+
+/*Mahasiswa*/
+
+Email : kewarganegarraan12USU2021@gmail.com
+pw : USU12345678
+

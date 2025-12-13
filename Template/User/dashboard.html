@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>Dashboard</title>
+    <link href="lib/main.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <style>
+      .fc .fc-col-header-cell {
+        background-color: #347f3c;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      * {
+        font-family: "Source Sans Pro", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- start container -->
+    <div class="container-fluid">
+      <div class="row flex">
+        <!-- Isi Dashboard -->
+        <div id="page-content" class="dashboard bg-secondary bg-opacity-10 col px-5 mx-0 pt-5">
+          <div class="container pt-3">
+            <div class="row row-cols-2 g-5 py-5 pe-5">
+              <!-- Recently accessed courses -->
+              <div class="col-md-8">
+                <div class="card border-0">
+                  <div class="header-card pb-5">
+                    <h6 class="card-title position-absolute top-0 start-0 px-3 mt-3">
+                      <b>Recently accessed courses</b>
+                    </h6>
+
+                    <!-- pagination -->
+                    <nav class="position-absolute top-0 end-0 mt-3 px-3" aria-label="Page navigation example">
+                      <ul class="pagination">
+                        <li class="page-item">
+                          <a class="page-link text-success" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                          </a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link text-success" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+
+                  <!-- isi card -->
+                  <div class="card-body">
+                    <a href="#">
+                      <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh1sGpm9gzHAPcjot_xUynBmxYUvSoAyyzWw&usqp=CAU"
+                        height="120px"
+                        class="card-img-top rounded-3"
+                        alt="..."
+                      />
+                    </a>
+                    <p class="card-text mt-3 text-muted">Genap 2021/2022</p>
+                    <p><a class="card-link link-dark" href="#">[TIF1205] Sistem Basis Data - Kelas C</a></p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Recently accessed courses -->
+
+              <!-- course overview -->
+              <div class="col-md-8">
+                <div class="card border-0 pb-5">
+                  <div class="header-card pb-5">
+                    <h6 class="card-title position-absolute top-0 start-0 px-3 mt-3"><b>Course overview</b></h6>
+                  </div>
+
+                  <!-- Filter button -->
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-outline-secondary dropdown-toggle mx-3 mb-3"
+                      type="button"
+                      id="dropdownMenuButton2"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      All
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+
+                    <button
+                      class="btn btn-outline-secondary dropdown-toggle me-3 float-end"
+                      type="button"
+                      id="dropdownMenuButton2"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Card
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+
+                    <button
+                      class="btn btn-outline-secondary dropdown-toggle mx-3 float-end"
+                      type="button"
+                      id="dropdownMenuButton2"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Last accessed
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+
+                  <!-- Courses-->
+                  <div class="row row-cols-1 row-cols-md-2 px-4 g-4">
+                    <div class="col">
+                      <div class="card border-0">
+                        <div class="card-body">
+                          <a href="#">
+                            <img
+                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh1sGpm9gzHAPcjot_xUynBmxYUvSoAyyzWw&usqp=CAU"
+                              height="120px"
+                              class="card-img-top rounded-3"
+                              alt="..."
+                            />
+                          </a>
+                          <p class="card-text mt-3 text-muted">Genap 2021/2022</p>
+                          <p>
+                            <a class="card-link link-dark pb-5" href="#"
+                              >[TIF1207] Struktur Data Dan Algoritma - Kelas C</a
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card border-0">
+                        <div class="card-body">
+                          <a href="#">
+                            <img
+                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh1sGpm9gzHAPcjot_xUynBmxYUvSoAyyzWw&usqp=CAU"
+                              height="120px"
+                              class="card-img-top rounded-3"
+                              alt="..."
+                            />
+                          </a>
+                          <p class="card-text mt-3 text-muted">Genap 2021/2022</p>
+                          <p><a class="card-link link-dark" href="#">[TIF1205] Sistem Basis Data - Kelas C</a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card border-0">
+                        <div class="card-body">
+                          <a href="#">
+                            <img
+                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh1sGpm9gzHAPcjot_xUynBmxYUvSoAyyzWw&usqp=CAU"
+                              height="120px"
+                              class="card-img-top rounded-3"
+                              alt="..."
+                            />
+                          </a>
+                          <p class="card-text mt-3 text-muted">Genap 2021/2022</p>
+                          <p>
+                            <a class="card-link link-dark pb-5" href="#"
+                              >[TIF1203] Pemrograman Web Lanjutan - Kelas C</a
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card border-0">
+                        <div class="card-body">
+                          <a href="#">
+                            <img
+                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh1sGpm9gzHAPcjot_xUynBmxYUvSoAyyzWw&usqp=CAU"
+                              height="120px"
+                              class="card-img-top rounded-3"
+                              alt="..."
+                            />
+                          </a>
+                          <p class="card-text mt-3 text-muted">Genap 2021/2022</p>
+                          <p>
+                            <a class="card-link link-dark pb-5" href="#"
+                              >[TIF1201] Pemrograman Berorientasi Objek - Kelas C</a
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Courses-->
+                </div>
+              </div>
+              <!-- End Course overview-->
+            </div>
+          </div>
+        </div>
+        <!-- End Isi dashboard -->
+      </div>
+    </div>
+    <!-- End container -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/e800405822.js" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+User
+Setiap User merupakan 1 role(mahasiswa, admin, dosen)
+Setiap user memiliki 1 alamat
+Setiap Fakultas memiliki banyak jurusan sementara setiap jurusan memiliki satu fakultas
+Setiap jurusan memiliki banyak mahasiswa. Setiap mahasiswa memiliki 1 jurusan.
+
+Matakuliah
+Setiap jurusan memiliki banyak mata kuliah. Setiap mata kuliah memiliki satu jurusan
+Setiap dosen dapat mengajar banyak mata kuliah. Setiap mata kuliah dapat diajar banyak dosen
+
+Pelajaran
+Setiap matakuliah memiliki banyak materi. Setiap mater memiliki satu matakuliah
+Setiap materi memiliki 0-1 tugas. Setiap tugas memiliki 1 materi
+
+Mahasiswa
+Setiap mahasiswa memiliki satu dosen pembimbing.Setiap dosen memiliki banyak mahasiswa yang dibimbing
+Setiap mahasiswa dapat mengenroll banyak matakuliah. Setiap matakuliah bisa dienroll banyak mahasiswa
+1/0 mahasiswa merupakan seoran Asisten Lab. setiap asisten lab merupakan seorang mahasiswa

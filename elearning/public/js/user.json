@@ -1,0 +1,32 @@
+[
+  {
+    "user_id": "1",
+    "NIK": "1012913",
+    "Nama": "Dzakiy Dzakwan",
+    "Email": "dzakcart@gmail.com",
+    "nomor": "082360360216",
+    "Agama": "Islam",
+    "kelamin": "Pria",
+    "Status": "Siswa"
+  },
+  {
+    "user_id": "2",
+    "NIK": "1231342",
+    "Nama": "Rizki Sahat",
+    "Email": "sahatrizki@gmail.com",
+    "nomor": "082205005467",
+    "Agama": "Kristen",
+    "kelamin": "Pria",
+    "Status": "Siswa"
+  },
+  {
+    "user_id": "3",
+    "NIK": "19998764532",
+    "Nama": "Budi Kurniawan",
+    "Email": "budit@gmail.com",
+    "nomor": "082360364321",
+    "Agama": "Islam",
+    "kelamin": "Pria",
+    "Status": "Guru"
+  }
+]

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- GOOGLE FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- BOX-ICON -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <!-- SIDEBAR START -->
+    <div class="nav-container d-flex">
+      <div class="navigation-float py-3">
+        <!-- LOGO CONTAINER START -->
+        <div class="logo-container">
+          <img src="img/usu.png" alt="usu_logo" />
+          <h4>Dashboard</h4>
+        </div>
+        <!-- LOGO CONTAINER END -->
+
+        <!-- MENU CONTAINER START -->
+        <div class="menu-container py-3">
+          <ul>
+            <a href="#" class="menu-item active">
+              <li>
+                <i class="bx bxs-dashboard"></i>
+                <p>Dashboard</p>
+              </li>
+            </a>
+
+            <a href="#" class="menu-item">
+              <li>
+                <i class="bx bx-user"></i>
+                <p>User</p>
+              </li>
+            </a>
+
+            <a href="#" class="menu-item">
+              <li>
+                <i class="bx bxs-graduation"></i>
+                <p>Mahasiswa</p>
+              </li>
+            </a>
+
+            <a href="#" class="menu-item">
+              <li>
+                <i class="bx bxs-chalkboard"></i>
+                <p>Dosen</p>
+              </li>
+            </a>
+
+            <a href="#" class="menu-item">
+              <li>
+                <i class="bx bxs-school"></i>
+                <p>University</p>
+              </li>
+            </a>
+          </ul>
+        </div>
+        <!-- MENU CONTAINER END -->
+
+        <!-- Profile COntainer START -->
+        <div class="profile-container">
+          <img src="img/avatar1.png" alt="" />
+          <div class="popover">
+            <ul>
+              <a href="">
+                <li>Setting</li>
+              </a>
+              <a href="">
+                <li>Logout</li>
+              </a>
+            </ul>
+          </div>
+        </div>
+        <!-- PROFILE CONTAINER END -->
+      </div>
+    </div>
+    <!-- SIDEBAR END -->
+
+    <!-- MAIN-BAR -->
+    <div class="section-container px-3">
+      <!-- DATA USER START -->
+      <div class="container data-user my-3 py-3">
+        <h3>Data User</h3>
+
+        <div class="chart">
+          <canvas class="my-3" id="userChart"></canvas>
+        </div>
+
+        <a href=""><div class="mx-auto detail-btn btn btn-outline-success">Detail</div></a>
+      </div>
+      <!--  DATA USER END -->
+
+      <!-- CARD SECTION START -->
+      <div class="container card-section my-3">
+        <div class="row">
+          <!-- DATA-MAHASISWA START -->
+          <div class="col-lg-6 data-container py-3">
+            <h3>Data Mahasiswa</h3>
+
+            <div class="chart">
+              <canvas class="my-3" id="mahasiswaChart"></canvas>
+            </div>
+
+            <a href=""><div class="mx-auto detail-btn btn btn-outline-success">Detail</div></a>
+          </div>
+          <!-- DATA MAHASISWA END -->
+
+          <!-- DATA DOSEN START -->
+          <div class="col-lg-6 data data-container py-3">
+            <h3>Data Dosen</h3>
+
+            <div class="chart">
+              <canvas class="my-3" id="dosenChart"></canvas>
+            </div>
+
+            <a href=""><div class="mx-auto detail-btn btn btn-outline-success">Detail</div></a>
+          </div>
+          <!-- DATA DOSEN END -->
+        </div>
+      </div>
+      <!-- CARD SECTION END -->
+
+      <div class="container detail-container my-3 py-3">
+        <h3>All data</h3>
+
+        <table class="table">
+          <tr>
+            <td>Fakultas</td>
+            <td>12</td>
+            <td>Jurusan</td>
+            <td>24</td>
+          </tr>
+          <tr>
+            <td>Mata-Kuliah</td>
+            <td>48</td>
+            <td>User</td>
+            <td>500</td>
+          </tr>
+          <tr>
+            <td>Mahasiswa</td>
+            <td>400</td>
+            <td>Dosen</td>
+            <td>100</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!-- MAIN-BAR END -->
+
+    <!-- JQUERY -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <!-- BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!-- FONT AWESOME -->
+    <!-- <script src="https://kit.fontawesome.com/9c0c4e63c7.js" crossorigin="anonymous"></script> -->
+    <!-- VANILLA-JS -->
+    <script src="js/sidebar.js"></script>
+    <!-- CHART JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"
+      integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      const labels = [2018, 2019, 2020, 2021];
+
+      const data1 = {
+        labels: labels,
+        datasets: [
+          {
+            label: "Total User",
+            data: [500, 985, 1250, 1500],
+            fill: false,
+            borderColor: "rgb(52, 127, 60, 40%)",
+            pointBorderColor: "rgb(51, 126, 59, 100%)",
+            pointBorderWidth: 5,
+            tension: 0.1,
+          },
+          {
+            label: "Mahasiswa",
+            data: [400, 785, 950, 1100],
+            borderColor: "rgb(28, 136, 237, 40%)",
+            pointBorderColor: "rgb(28, 136, 237, 100%)",
+            pointBorderWidth: 5,
+            tension: 0.1,
+          },
+          {
+            label: "Dosen",
+            data: [100, 200, 300, 400],
+            borderColor: "rgb( 0, 0, 0,40%)",
+            pointBorderColor: "rgb(0, 0, 0, 100%)",
+            pointBorderWidth: 5,
+            tension: 0.1,
+          },
+        ],
+      };
+
+      const data2 = {
+        labels: labels,
+        datasets: [
+          {
+            type: "bar",
+            label: "Aktif",
+            data: [300, 200, 100, 300],
+            fill: true,
+            backgroundColor: "rgb(51, 126, 59, 100%)",
+          },
+          {
+            type: "bar",
+            label: "Tidak Aktif",
+            data: [300, 200, 100, 300],
+            fill: true,
+            backgroundColor: "#EF0F0F",
+            tension: 0.1,
+          },
+        ],
+      };
+
+      const data3 = {
+        labels: labels,
+        datasets: [
+          {
+            type: "bar",
+            label: "Aktif",
+            data: [300, 200, 100, 300],
+            fill: true,
+            backgroundColor: "rgb(51, 126, 59, 100%)",
+          },
+          {
+            type: "bar",
+            label: "Tidak Aktif",
+            data: [300, 200, 100, 300],
+            fill: true,
+            backgroundColor: "#EF0F0F",
+            tension: 0.1,
+          },
+        ],
+      };
+
+      const config1 = {
+        type: "line",
+        data: data1,
+      };
+
+      const config2 = {
+        type: "bar",
+        data: data2,
+      };
+
+      const config3 = {
+        type: "bar",
+        data: data3,
+      };
+
+      const chartUser = document.getElementById("userChart").getContext("2d");
+      const chartSiswa = document.getElementById("mahasiswaChart").getContext("2d");
+      const chartDosen = document.getElementById("dosenChart").getContext("2d");
+
+      const myChart = new Chart(chartUser, config1);
+      const myChart2 = new Chart(chartSiswa, config2);
+      const myChart3 = new Chart(chartDosen, config3);
+    </script>
+  </body>
+</html>

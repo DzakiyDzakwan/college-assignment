@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- GOOGLE FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- BOX-ICON -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/fakultas.css" />
+    <title>Fakultas</title>
+  </head>
+  <body>
+    <!-- ALERT -->
+    <div class="alert alert-danger alert-dismissible fade show text-center" role="alert">
+      <strong>Kode Fakultas</strong> Sudah tersedia.
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <!-- ALERT END -->
+
+    <!-- SIDEBAR START -->
+    <div class="nav-container d-flex">
+      <div class="navigation-float py-3">
+        <!-- LOGO CONTAINER START -->
+        <div class="logo-container">
+          <img src="img/usu.png" alt="usu_logo" />
+          <h4>Dashboard</h4>
+        </div>
+        <!-- LOGO CONTAINER END -->
+
+        <!-- MENU CONTAINER START -->
+        <div class="menu-container py-3">
+          <ul>
+            <a href="#" class="menu-item">
+              <li>
+                <i class="bx bxs-dashboard"></i>
+                <p>Dashboard</p>
+              </li>
+            </a>
+
+            <a href="#" class="menu-item">
+              <li>
+                <i class="bx bx-user"></i>
+                <p>User</p>
+              </li>
+            </a>
+
+            <a href="#" class="menu-item">
+              <li>
+                <i class="bx bxs-graduation"></i>
+                <p>Mahasiswa</p>
+              </li>
+            </a>
+
+            <a href="#" class="menu-item">
+              <li>
+                <i class="bx bxs-chalkboard"></i>
+                <p>Dosen</p>
+              </li>
+            </a>
+
+            <a href="#" class="menu-item active">
+              <li>
+                <i class="bx bxs-school"></i>
+                <p>University</p>
+              </li>
+            </a>
+          </ul>
+        </div>
+        <!-- MENU CONTAINER END -->
+
+        <!-- Profile COntainer START -->
+        <div class="profile-container">
+          <img src="img/avatar1.png" alt="" />
+          <div class="popover">
+            <ul>
+              <a href="">
+                <li>Setting</li>
+              </a>
+              <a href="">
+                <li>Logout</li>
+              </a>
+            </ul>
+          </div>
+        </div>
+        <!-- PROFILE CONTAINER END -->
+      </div>
+    </div>
+    <!-- SIDEBAR END -->
+
+    <!-- MAIN-BAR -->
+
+    <div class="section-container px-3">
+      <!-- FAKULTAS CONTAINER -->
+      <div class="container fakultas my-3 p-3">
+        <h3>Data Fakultas</h3>
+        <div class="container d-flex" style="border: 1px solid; height: 400px">
+          <div class="form-fakultas p-2">
+            <h5 class="text-center fw-bold">Create Fakultas</h5>
+            <form action="" method="POST" class="text-dark py-3 fw-bold">
+              <label for="id">Kode Fakultas</label>
+              <input class="form-control" type="text" name="id" id="id" />
+              <label for="nama" class="my-2">Nama Fakultas</label>
+              <input class="form-control" type="text" name="" id="nama" />
+              <input class="btn btn-success my-3 form-control" type="submit" value="SUBMIT" />
+            </form>
+          </div>
+          <div class="table-fakultas overflow-auto py-2 px-5">
+            <h5 class="text-center sticky-top bg-white fw-bold">Table Fakultas</h5>
+            <table class="table text-center">
+              <thead>
+                <tr>
+                  <th>Kode Fakultas</th>
+                  <th>Nama Fakultas</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>F001</td>
+                  <td>Kedokteran</td>
+                  <td>
+                    <a href="" class="text-decoration-none">
+                      <div class="btn btn-primary">
+                        <i class="bx bx-edit-alt"></i>
+                      </div>
+                    </a>
+                    <a href="" class="text-decoration-none">
+                      <div class="btn btn-danger">
+                        <i class="bx bx-trash"></i>
+                      </div>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- FAKULTAS CONTAINER END -->
+
+      <!-- Jurusan CONTAINER -->
+      <div class="container fakultas my-3 p-3">
+        <h3>Data Jurusan</h3>
+        <div class="container d-flex" style="border: 1px solid; height: 400px">
+          <div class="form-fakultas p-2">
+            <h5 class="text-center fw-bold">Create Jurusan</h5>
+            <form action="" method="POST" class="text-dark py-3 fw-bold">
+              <label for="id">Kode Jurusan</label>
+              <input class="form-control" type="text" name="id" id="id" />
+              <label for="nama" class="my-2">Nama Jurusan</label>
+              <input class="form-control" type="text" name="jurusan_name" id="nama" />
+              <label for="fakultas">Fakultas</label>
+              <select class="form-select" aria-label="Default select example" id="fakultas">
+                <option selected>Tes</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <input class="btn btn-success my-3 form-control" type="submit" value="SUBMIT" />
+            </form>
+          </div>
+          <div class="table-fakultas overflow-auto py-2 px-5">
+            <h5 class="text-center sticky-top bg-white fw-bold">Table Jurusan</h5>
+            <table class="table text-center">
+              <thead>
+                <tr>
+                  <th>Kode Jurusan</th>
+                  <th>Nama Jurusan</th>
+                  <th>Fakultas</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>J001</td>
+                  <td>Ilmu Kedokteran</td>
+                  <td>Kedokteran</td>
+                  <td>
+                    <a href="" class="text-decoration-none">
+                      <div class="btn btn-primary">
+                        <i class="bx bx-edit-alt"></i>
+                      </div>
+                    </a>
+                    <a href="" class="text-decoration-none">
+                      <div class="btn btn-danger">
+                        <i class="bx bx-trash"></i>
+                      </div>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- Jurusan CONTAINER END -->
+
+      <!-- Matakuliah CONTAINER -->
+      <div class="container fakultas my-3 p-3">
+        <h3>Data Matakuliah</h3>
+        <div class="container d-flex" style="border: 1px solid; height: 400px">
+          <div class="form-fakultas p-2">
+            <h5 class="text-center fw-bold">Create Matakuliah</h5>
+            <form action="" method="POST" class="text-dark py-3 fw-bold">
+              <label for="id">Kode Matakuliah</label>
+              <input class="form-control" type="text" name="id" id="id" />
+              <label for="nama" class="my-2">Nama Matakuliah</label>
+              <input class="form-control" type="text" name="jurusan_name" id="nama_matkul" />
+              <label for="fakultas">Jurusan</label>
+              <select class="form-select" aria-label="Default select example" id="jurusan">
+                <option selected>Tes</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <input class="btn btn-success my-3 form-control" type="submit" value="SUBMIT" />
+            </form>
+          </div>
+          <div class="table-fakultas overflow-auto py-2 px-5">
+            <h5 class="text-center sticky-top bg-white fw-bold">Table Matakuliah</h5>
+            <table class="table text-center">
+              <thead>
+                <tr>
+                  <th>Kode Matakuliah</th>
+                  <th>Nama Matakuliah</th>
+                  <th>Jurusan</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>MK001</td>
+                  <td>Pengantar Ilmu Kedokteran</td>
+                  <td>Ilmu Kedokteran</td>
+                  <td>
+                    <a href="" class="text-decoration-none">
+                      <div class="btn btn-primary">
+                        <i class="bx bx-edit-alt"></i>
+                      </div>
+                    </a>
+                    <a href="" class="text-decoration-none">
+                      <div class="btn btn-danger">
+                        <i class="bx bx-trash"></i>
+                      </div>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- Matakuliah CONTAINER END -->
+
+      <!-- Matakuliah CONTAINER -->
+      <div class="container fakultas my-3 p-3">
+        <h3>Data Kelas</h3>
+        <div class="container d-flex" style="border: 1px solid; height: 400px">
+          <div class="form-fakultas p-2">
+            <h5 class="text-center fw-bold">Create Kelas</h5>
+            <form action="" method="POST" class="text-dark py-3 fw-bold">
+              <label for="id">Kode Kelas</label>
+              <input class="form-control" type="text" name="id" id="id" />
+              <label for="nama" class="my-2">Nama Kelas</label>
+              <input class="form-control" type="text" name="jurusan_name" id="nama_matkul" />
+              <label for="fakultas">Matakuliah</label>
+              <select class="form-select" aria-label="Default select example" id="jurusan">
+                <option selected>Tes</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <label for="fakultas">Dosen</label>
+              <select class="form-select" aria-label="Default select example" id="jurusan">
+                <option selected>Tes</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <input class="btn btn-success my-3 form-control" type="submit" value="SUBMIT" />
+            </form>
+          </div>
+          <div class="table-fakultas overflow-auto py-2 px-5">
+            <h5 class="text-center sticky-top bg-white fw-bold">Table Jurusan</h5>
+            <table class="table text-center">
+              <thead>
+                <tr>
+                  <th>Kode Kelas</th>
+                  <th>Nama Kelas</th>
+                  <th>Matakuliah</th>
+                  <th>Dosen</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>K001</td>
+                  <td class="fs-6">Pengantar Ilmu Kedokteran KOM A</td>
+                  <td>Pengantar Ilmu Kedokteran</td>
+                  <td>Budiman</td>
+                  <td>
+                    <a href="" class="text-decoration-none">
+                      <div class="btn btn-primary">
+                        <i class="bx bx-edit-alt"></i>
+                      </div>
+                    </a>
+                    <a href="" class="text-decoration-none">
+                      <div class="btn btn-danger">
+                        <i class="bx bx-trash"></i>
+                      </div>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- Matakuliah CONTAINER END -->
+    </div>
+    <!-- MAIN-BAR END -->
+
+    <!-- JQUERY -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <!-- BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!-- FONT AWESOME -->
+    <!-- <script src="https://kit.fontawesome.com/9c0c4e63c7.js" crossorigin="anonymous"></script> -->
+    <!-- VANILLA-JS -->
+    <!-- CHART JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"
+      integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
