@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700;900&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="subpage.css">
+    <title>Steak</title>
+  </head>
+  <body>
+
+    <!-- Navbar Component -->
+    <div class="container-fluid border sticky-top navbar-main mb-4">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+              <a class="navbar-brand mx-3" href="../index.html"><h3>RecipeBook</h3></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-2">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Menu
+                    </a>
+                    <ul class="dropdown-menu my-2" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item px-2" href="../foods.html">Food</a></li>
+                      <li><a class="dropdown-item px-2" href="../drinks.html">Drink</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><button class="btn btn-outline-success">Sign Up</button></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><button class="btn btn-outline-primary">Sign In</button></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+
+    <!-- Main-section -->
+    <div class="container border px-4 py-4 bg-light">
+      <div class="row">
+
+        <div class="col-lg-5 px-4 image-section">
+          <img src="../food/steak.jpg" alt="Cheeseburger" width="100%">
+        </div>
+        <div class="col-lg-7">
+          <div class="profile-section my-2">
+            <img src="../avatar/avatar3.png" alt="">
+            <span>Genghis Khan</span>
+          </div>
+          <div style="overflow: scroll; height: 500px;">
+            <h2 class="title my-4">Steak</h2>
+            <div class="description my-4">
+              <span>Description :</span>
+              <p class="description-item">Premium Meat with Delicious Sauce</p>
+            </div>
+            <div class="ingredients my-4">
+              <span>Ingredients :</span>
+              <ul class="ingredients-item">
+                <li>Beef</li>
+                <li>Lot of Beef</li>
+              </ul>
+            </div>
+            <div class="procedur my-4">
+              <span>Procedurals :</span>
+              <ol class="procedur-item">
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsm</li>
+                <li>Lorem Ipsum</li>
+              </ol>
+            </div>
+          </div>
+          <div class="thumbs-btn mt-4">
+            <button class="btn btn-outline-danger"><i class="far fa-thumbs-down fa-2x"></i></button>
+            <button class="btn btn-outline-success"><i class="far fa-thumbs-up fa-2x"></i></button>
+          </div>
+        </div>
+        <!-- Comment Section -->
+        <div class="col-lg-12 px-4 py-5 comment-section">
+          <h2>Comment</h2>
+          <form action="" class="d-flex">
+            <textarea name="comment" class="form-control" id="" cols="20" rows="5" placeholder="Comment Here"></textarea>
+            <button class="edit-btn btn btn-success mx-4"><i class="fas fa-pen"></i></button>
+          </form>
+          <div class="container-fluid comment-container px-0 ">
+            <div class="profile-comment mt-4">
+              <img src="../avatar/avatar2.png" alt="profile-img">
+              <span>Xiau Ling</span>
+              <p class="my-2 ms-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus voluptates distinctio ex delectus, omnis id eveniet sed deleniti aliquid autem quis a perferendis dicta corporis doloremque eligendi vitae asperiores blanditiis.</p>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid bg-light mt-4 border">
+      <footer class="container bg-light px-4 py-1">
+        <div class="row">
+          <div class="col-sm-12 col-lg-4 my-2">
+            <div class="footer-item">
+              <i class="fab fa-whatsapp fa-2x"></i>
+              <span>08808080808</span>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-4 my-2">
+            <div class="footer-item">
+              <i class="far fa-envelope fa-2x"></i>
+              <span>Blablala@gmail.com</span>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-4 my-2">
+            <div class="footer-item">
+              <i class="fas fa-map-marker-alt fa-2x"></i>
+              <span>KeraSakti Road</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Boostrap Js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <!-- font Awesome -->
+    <script src="https://kit.fontawesome.com/9c0c4e63c7.js" crossorigin="anonymous"></script>
+  </body>
+</html>
